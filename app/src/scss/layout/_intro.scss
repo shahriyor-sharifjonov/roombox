@@ -1,0 +1,45 @@
+.intro{
+    background: url('../images/blue-fon.webp') center / cover no-repeat;
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    &__content{
+        width: 50%;
+        text-align: right;
+        padding-right: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    &__subtitle{
+        font-size: 57px;
+        color: #ffffff;
+        line-height: 1;
+    }
+    &__title{
+        font-size: 48px;
+        font-weight: normal;
+        line-height: 1.1;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        display: none;
+        @include media(992){
+            display: block;   
+        }
+    }
+    &__img{
+        width: 50%;
+        line-height: 0;
+        @include media(992){
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
