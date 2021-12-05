@@ -25,4 +25,10 @@ a {
 }
 .section{
     padding: 75px 0;
+    &:nth-child(odd){
+        padding: 75px 0;
+        @include media(576){
+            padding: 20px 0;   
+        }
+    }
 }

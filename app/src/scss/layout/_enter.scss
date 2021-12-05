@@ -142,6 +142,7 @@
         width: max-content;
         display: block;
         margin: 8px 0 0 0;
+        transition:  200ms ease;
         &:hover{
             background: #ff2e58;
         }
