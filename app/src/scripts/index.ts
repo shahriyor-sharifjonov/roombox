@@ -14,6 +14,10 @@ var swiper = new Swiper(".products__item-slider", {
     loop: true,
     preloadImages: false,
     lazy: true,
+    navigation: {
+        nextEl: ".products__item-slider-next",
+        prevEl: ".products__item-slider-prev",
+      },
 });
 var swiper = new Swiper(".reviews__slider-body ", {
     sliderPerView: 1,

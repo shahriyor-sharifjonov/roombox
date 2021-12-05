@@ -40,6 +40,28 @@
         }
         &-slider{
             border-bottom: 1px solid #00000030;
+            &-next{
+                width: 75px;
+                height: 75px;
+                background: rgba(0,0,0,0.2);
+                cursor: pointer;  
+                color: #fff !important;  
+                right: 0;
+                left: auto;
+                bottom: 0;
+                top: auto;                   
+            }
+            &-prev{
+                width: 75px;
+                height: 75px;
+                background: rgba(0,0,0,0.2);
+                cursor: pointer;          
+                color: #fff !important;     
+                right: 77px;
+                left: auto;
+                bottom: 0;
+                top: auto;        
+            }
         }
         .swiper-slide{
             line-height: 0;
