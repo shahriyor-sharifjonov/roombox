@@ -5,8 +5,11 @@ var swiper = new Swiper(".intro__slider", {
     lazy: true,
 });
 var swiper = new Swiper(".products__item-slider", {
+    sliderPerView: 1,
     grabCursor: true,
     loop: true,
     preloadImages: false,
-    lazy: true,
+    lazy: {
+        
+    }
 });
