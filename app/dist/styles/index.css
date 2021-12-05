@@ -190,7 +190,7 @@ iframe {
 }
 
 .intro {
-  background: url("../images/blue-fon.webp") center/cover no-repeat;
+  background: url("../images/blue-fon.jpg") center/cover no-repeat;
 }
 
 .intro__body {
@@ -527,7 +527,7 @@ iframe {
   z-index: 1;
   width: 19px;
   height: 16px;
-  background: url("../images/ico-checks.webp") left -83px no-repeat;
+  background: url("../images/ico-checks.png") left -83px no-repeat;
 }
 
 .enter__list-li span {
@@ -559,7 +559,7 @@ iframe {
 }
 
 .products__title {
-  background: url("../images/title-bg.webp") center/cover no-repeat;
+  background: url("../images/title-bg.jpg") center/cover no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -809,7 +809,7 @@ iframe {
   left: 0;
   width: 23px;
   height: 19px;
-  background: url("../images/ico-checks.webp") -28px top no-repeat;
+  background: url("../images/ico-checks.png") -28px top no-repeat;
 }
 
 .advantages__items {
@@ -867,7 +867,7 @@ iframe {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: url("../images/title-bg.webp") center/cover no-repeat;
+  background: url("../images/title-bg.jpg") center/cover no-repeat;
   padding: 40px 15px;
 }
 
@@ -1004,7 +1004,7 @@ iframe {
 }
 
 .sm-testimonial-slide-sm-icon {
-  background-image: url("../images/icons.webp");
+  background-image: url("../images/icons.png");
   background-size: auto;
   background-repeat: no-repeat;
   display: inline-block;
@@ -1079,7 +1079,7 @@ iframe {
 .sm-testimonial-slide-body-right-second-like-icon {
   width: 13px;
   height: 15px;
-  background-image: url("../images/icons.webp");
+  background-image: url("../images/icons.png");
   background-position: 0 -234px;
   background-size: auto;
   background-repeat: no-repeat;
@@ -1211,7 +1211,7 @@ iframe {
 }
 
 .footer {
-  background: url("../images/title-bg.webp") center/cover no-repeat;
+  background: url("../images/title-bg.jpg") center/cover no-repeat;
 }
 
 .footer__body {
