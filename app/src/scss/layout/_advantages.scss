@@ -1,0 +1,165 @@
+.advantages{
+    background: #f9f9f9;
+    color: #56627a;
+    &__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        font-size: 44px;
+        text-align: center;
+        margin: 0 0 10px;
+        color: #56627a;
+        margin-bottom: 20px;
+        @include media(768){
+            font-size: 36px;   
+        }
+        @include media(576){
+            font-size: 30px;   
+        }
+    }
+    &__content{
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        max-width: 760px;
+        width: 100%;
+        @include media(768){
+            row-gap: 40px;
+        }
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        column-gap: 10px;
+        @include media(768){
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            column-gap: 0;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+    }
+    &__img{
+        width: calc(50% - 5px);
+        @include media(768){
+            width: 100%;   
+        }
+    }
+    &__col{
+        background: rgba(39, 48, 67, 0.075);
+        width: calc(50% - 5px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include media(768){
+            width: 100%;   
+        }
+        &.gray{
+            background: #56627a;
+            color: #f9f9f9;
+            @include media(768){
+                order: 1;  
+            }
+        }
+    }
+    &__list{
+        padding: 20px 1em;
+    }
+    &__li{
+        font-size: 25px;
+        padding: 0 0 0 27px;
+        line-height: 28px;
+        position: relative;
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+        @include media(768){
+            font-size: 22px;   
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 0;
+            width: 23px;
+            height: 19px;
+            background: url('../images/ico-checks.webp') -28px top no-repeat;
+        }
+    }
+    &__items{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-evenly;
+        @include media(992){
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;   
+            row-gap: 20px;
+        }
+    }
+    &__item{
+        color: #56627A;
+        background: rgba(39, 48, 67, 0.075);
+        padding: 25px;
+        border-radius: 11px;
+        max-width: 450px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        &-img{
+            margin-right: 10px;
+        }
+        &-title{
+            font-size: 22px;
+            line-height: 1.1;
+            margin-bottom: 8px;
+        }
+        &-p{
+            font-family: Arial;
+        }
+    }
+}
+
+.recommendation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../images/title-bg.webp') center / cover no-repeat;
+    padding: 40px 15px;
+    @include media(768){
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &__title{
+        font-size: 26px;
+        color: #fff;
+        margin-right: 10px;
+        @include media(768){
+            text-align: center;
+            margin-right: 0;
+        }
+    }
+    &__btn{
+        background: #d10039;
+        padding: 5px 20px;
+        font-size: 26px;
+        display: inline-block;
+        color: #ffffff;
+        text-decoration: none;
+        line-height: 1.5;
+        border-radius: 50px;
+        box-shadow: 0 1px 0 #fd2d66 inset, 1px 1px 0 #940028, 2px 2px 0 #940028, 3px 3px 0 #940028, 4px 4px 0 #940028, 4px 4px 8px rgba(0, 0, 0, 55%);
+        @include media(768){
+            margin-top: 20px;   
+        }
+    }
+}

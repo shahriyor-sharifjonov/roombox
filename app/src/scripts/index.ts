@@ -1,4 +1,8 @@
 var swiper = new Swiper(".intro__slider", {
+    sliderPerView: 1,  
+    autoplay: {
+        delay: 3000,
+    },
     grabCursor: true,
     loop: true,
     preloadImages: false,
@@ -9,7 +13,5 @@ var swiper = new Swiper(".products__item-slider", {
     grabCursor: true,
     loop: true,
     preloadImages: false,
-    lazy: {
-        
-    }
+    lazy: true,
 });

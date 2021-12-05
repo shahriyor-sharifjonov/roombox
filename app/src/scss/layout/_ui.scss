@@ -23,6 +23,9 @@ input {
 a {
     text-decoration: none;
 }
+ul{
+    list-style-type: none;
+}
 .section{
     padding: 75px 0;
     @include media(576){
