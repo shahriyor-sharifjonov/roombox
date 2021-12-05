@@ -1,0 +1,86 @@
+.products{
+    &__title{
+        background: url('../images/title-bg.webp') center / cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 15px;
+        color: white;
+        text-align: center;
+        font-size: 44px;
+        margin-bottom: 40px;
+        @include media(992){
+            font-size: 36px;   
+        }
+        @include media(576){
+            font-size: 34px;   
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    &__item{
+        width: calc(25% - 15px);
+        border-radius: 15px;
+        overflow: hidden;
+        border: 1px solid #00000030;
+        @include media(1200){
+            width: calc(33.333% - 14px);
+        }
+        @include media(992){
+            width: calc(50% - 10px);
+        }
+        @include media(576){
+            width: 100%;
+        }
+        &-slider{
+            border-bottom: 1px solid #00000030;
+        }
+        .swiper-slide{
+            line-height: 0;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        &-row{
+            padding: 8px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-title{
+            font-size: 16px;
+            font-family: Arial;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+        &-price{
+            font-size: 16px;
+            color: #111;
+            font-weight: 700;
+            font-family: Arial;
+        }
+        &-btn{
+            padding: 4px 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 40px;
+            color: #fff;
+            text-transform: uppercase;
+            margin-left: 9px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: Arial;
+            background-color: #242f47;
+        }
+    }
+}
