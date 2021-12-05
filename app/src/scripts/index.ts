@@ -15,3 +15,11 @@ var swiper = new Swiper(".products__item-slider", {
     preloadImages: false,
     lazy: true,
 });
+var swiper = new Swiper(".reviews__slider-body ", {
+    sliderPerView: 1,
+    grabCursor: true,
+    spaceBetween: 20,
+    loop: true,
+    preloadImages: false,
+    lazy: true,
+});
