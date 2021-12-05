@@ -1,0 +1,20 @@
+.footer{
+    background: url('../images/title-bg.webp') center / cover no-repeat;
+    &__body{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+    }
+    &__p{
+        font-family: Arial;
+        color: #6D7890;
+        font-size: 12px;
+    }
+    &__req{
+        margin-top: 30px;
+        font-size: 16px;
+        color: #6D7890;
+        font-family: Helvetica;
+    }
+}

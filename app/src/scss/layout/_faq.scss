@@ -1,0 +1,102 @@
+.faq{
+    &__title{
+        font-size: 44px;
+        text-align: center;
+        margin: 0 0 10px;
+        color: #56627a;
+        margin-bottom: 30px;
+        @include media(768){
+            font-size: 36px;   
+        }
+        @include media(576){
+            font-size: 30px;   
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: stretch;
+        @include media(992){
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;   
+            border-radius: 11px;
+            overflow: hidden;
+            max-width: 400px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__col{
+        max-width: 400px;
+        width: 100%;
+        color: #56627A;
+        background: rgba(39, 48, 67, 0.075);
+        padding: 25px;
+        border-radius: 11px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        @include media(992){
+            border-radius: 0;
+            &:last-of-type{
+                padding-top: 0;
+            }
+        }
+    }
+    &__item{
+        &:not(:last-child){
+            margin-bottom: 16px;
+        }
+        &-dot{
+            width: 14px;
+            height: 14px;
+            background: #fff;
+            border-radius: 50%;
+            margin-right: 4px;
+        }
+        &-header{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 6px;
+            &-title{
+                font-size: 22px;
+            }
+        }
+        &-desc{
+            padding-left: 18px;
+            font-family: Arial;
+        }
+    }
+}
+
+
+.badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media(900){
+        flex-wrap: wrap;   
+        row-gap: 30px;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include media(900){
+            width: 33.333%;
+        }
+        @include media(576){
+            width: 50%;
+        }
+        img{
+            width: 80%;
+            @include media(900){
+                width: 70%;
+            }
+        }
+    }
+}
